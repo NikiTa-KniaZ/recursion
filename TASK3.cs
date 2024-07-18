@@ -16,6 +16,7 @@
 
 { 
 Console.WriteLine(""); 
+Console.WriteLine("");
 Console.Write("Введите неотрицательное число m: "); 
 int m = int.Parse(Console.ReadLine()); 
  
@@ -37,3 +38,32 @@ Console.WriteLine($"Значение функции Аккермана для ({
     } 
 }
 
+{
+Console.WriteLine(""); 
+Console.Write("Введите значение M: "); 
+int M = int.Parse(Console.ReadLine()); 
+ 
+Console.Write("Введите значение N: "); 
+int N = int.Parse(Console.ReadLine()); 
+    if (M < N)
+ {
+    Numbers(M, N); 
+   void Numbers(int current, int N) 
+    { 
+        if (current <= N) 
+        { 
+            Console.Write(current + " "); 
+            Numbers(current + 1, N); 
+        } 
+    }  
+ }
+    Numbers1(N, M); 
+    void Numbers1(int current, int M) 
+    { 
+        if (current <= M) 
+        { 
+            Console.Write(current + " "); 
+            Numbers1(current + 1, M); 
+        } 
+    } 
+}
